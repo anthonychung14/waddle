@@ -12,7 +12,7 @@ module.exports = function (app, express) {
   app.get('/auth/facebook',
     passport.authenticate('facebook'));
 
-  app.get('/auth/facebook/return',
+  app.get('/auth/facebook/callback',
     passport.authenticate('facebook', { failureRedirect: '/signin' }),
     function(req, res) {
       // Successful authentication, redirect home.

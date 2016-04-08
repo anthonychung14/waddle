@@ -1,5 +1,7 @@
+// server.js
+
 var express = require('express');
-var facebook = require('./config/facebook.js');
+var auth = require('./config/auth.js');
 var passport = require('passport');
 var FacebookStrategy = require('passport-facebook').Strategy;
 
@@ -11,16 +13,19 @@ var app = express();
 app.use(passport.initialize());
 app.use(passport.session());
 
-passport.use(new FacebookStrategy({
-    clientID: facebook.clientID,
-    clientSecret: facebook.clientSecret,
-    callbackURL: facebook.url,
-    profileFields: ['id', 'displayName', 'photos', 'email'], // get specific fields of user profile
-  },
+passport.use(new FacebookStrategy(auth.facebookAuth,
   function(accessToken, refreshToken, profile, cb) {
-    User.findOrCreate({ facebookId: profile.id }, function (err, user) {
-      return cb(err, user);
-    });
+    // process.nextTick(function() {
+    // });
+      console.log(profile);
+    // TODO find user in database
+    // User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+    //   if (err) {
+    //     console.log('err creating find/create user', err);
+    //   } else {
+    //     return cb(err, user);
+    //   }
+    // });
   }
 ));
 
