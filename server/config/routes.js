@@ -16,7 +16,7 @@ module.exports = function (app, express) {
     passport.authenticate('facebook', { failureRedirect: '/signin' }),
     function(req, res) {
       // Successful authentication, redirect home.
-      console.log('app.get /auth/facebook/callback res: ', res);
+      console.log('----> app.get /auth/facebook/callback res: ', res);
       res.redirect('/');
     });
 
