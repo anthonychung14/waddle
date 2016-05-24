@@ -5,6 +5,7 @@
 
 Waddle is a way to meet new people. Grab lunch or coffee with a someone new – who knows, it may just be the start of a beautiful friendship.
 
+![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
 ![alt tag](https://dl.dropboxusercontent.com/s/btkgkxoqjtjv5si/waddle.gif)
 
 Supported operating systems are >= iOS 7.0
