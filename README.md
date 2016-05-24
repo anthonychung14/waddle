@@ -5,7 +5,7 @@
 
 Waddle is a way to meet new people. Grab lunch or coffee with a someone new – who knows, it may just be the start of a beautiful friendship.
 
-![alt tag](https://dl.dropboxusercontent.com/s/btkgkxoqjtjv5si/waddle.gif?dl=0)
+![alt tag](https://dl.dropboxusercontent.com/s/btkgkxoqjtjv5si/waddle.gif)
 
 Supported operating systems are >= iOS 7.0
 
